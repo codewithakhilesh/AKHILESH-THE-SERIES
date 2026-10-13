@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b13">
+  <meta name="description" content="Akhilesh Bhagat — Data Analyst, Data Science enthusiast and AI explorer. Discover my work, projects and story in an original cinematic portfolio.">
+  <meta property="og:title" content="Akhilesh — The Series">
+  <meta property="og:description" content="Data-driven stories. Real projects. An original portfolio.">
+  <meta property="og:image" content="assets/images/hero-wide.webp">
+  <title>AKHILESH — THE SERIES | Data Analyst Portfolio</title>
+  <link rel="icon" href="assets/images/profile-avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/images/hero-wide.webp" as="image">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="noise-vignette" aria-hidden="true"></div>
+  <div class="stage stage-intro is-active" id="introScreen" aria-label="Cinematic introduction">
+    <div class="intro-orbit intro-orbit-one"></div><div class="intro-orbit intro-orbit-two"></div>
+    <div class="intro-topline"><span class="series-stamp"><span class="brand-mark">A</span> SERIES ORIGINAL</span><span>EST. 2026 <span class="tiny-dot">●</span> THE NEXT CHAPTER</span></div>
+    <div class="intro-portrait-wrap" aria-hidden="true"><img src="assets/images/hero-intro-clear.webp" class="intro-portrait" alt=""></div>
+    <div class="intro-content">
+      <p class="label label-center">WELCOME TO MY WORLD</p>
+      <h1 class="intro-name display">AKHILESH</h1>
+      <div class="series-under display">THE SERIES</div>
+      <p class="intro-tag">DATA ANALYST <span>✦</span> DATA SCIENCE <span>✦</span> AI EXPLORER</p>
+      <button type="button" class="button button-light intro-play" id="enterExperience"><svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="m8 5 12 7-12 7z"/></svg> PLAY THE SERIES</button>
+      <p class="intro-minor">ONE PERSON. MANY STORIES. INFINITE POSSIBILITIES.</p>
+    </div>
+    <div class="intro-corner intro-bottom-left">01 / THE BEGINNING</div><div class="intro-corner intro-bottom-right">PLAY TO BEGIN ↗</div>
+  </div>
+
+  <div class="stage stage-profiles" id="profilesScreen" aria-label="Choose your viewing profile" hidden>
+    <button type="button" class="text-link back-intro" id="backToIntro">← BACK TO INTRO</button>
+    <div class="profiles-content">
+      <span class="logo-word"><span class="brand-mark">A</span> SERIES</span>
+      <h2 class="profiles-head display">WHO'S WATCHING?</h2>
+      <p class="profiles-sub">Choose your perspective. The story is the same — the experience is yours.</p>
+      <div class="profiles-grid" role="group" aria-label="Choose profile">
+        <button class="profile-card" data-profile="main" type="button"><span class="profile-image main-avatar"><img src="assets/images/profile-avatar.webp" alt="Akhilesh Bhagat"><span class="main-flag">MAIN</span></span><span class="profile-name">Akhilesh</span><span class="profile-caption">The full series, in order</span></button>
+        <button class="profile-card" data-profile="recruiter" type="button"><span class="profile-image profile-recruiter"><img src="assets/images/avatar-recruiter.webp" alt="Recruiter reviewing a resume" loading="lazy"></span><span class="profile-name">Recruiter</span><span class="profile-caption">The resume cut</span></button>
+        <button class="profile-card" data-profile="analyst" type="button"><span class="profile-image profile-analyst"><img src="assets/images/avatar-analyst.webp" alt="Data analytics dashboards" loading="lazy"></span><span class="profile-name">Data Analyst</span><span class="profile-caption">The insights cut</span></button>
+        <button class="profile-card" data-profile="explorer" type="button"><span class="profile-image profile-explorer"><img src="assets/images/avatar-ai.webp" alt="Artificial intelligence technology" loading="lazy"></span><span class="profile-name">AI Explorer</span><span class="profile-caption">The future cut</span></button>
+      </div>
+      <div class="profiles-bottom">FOUR WAYS IN. ONE STORY WORTH EXPLORING.</div>
+    </div>
+  </div>
+
+  <div class="site-shell" id="siteShell" hidden>
+    <header class="topbar" id="topbar">
+      <a href="#home" class="logo-word top-logo" aria-label="Akhilesh The Series, home"><span class="brand-mark">A</span> SERIES</a>
+      <nav class="main-nav" aria-label="Main navigation" id="mainNav">
+        <a href="#home" class="nav-item active">Home</a><a href="#resume" class="nav-item">Resume</a><a href="#moments" class="nav-item">Moments</a><a href="#skills" class="nav-item">Skills</a><a href="#originals" class="nav-item">Originals</a><a href="#about" class="nav-item">About</a><a href="#journey" class="nav-item">Journey</a><a href="#top-picks" class="nav-item">Top Picks</a>
+      </nav>
+      <div class="nav-actions"><button id="switchProfile" type="button" class="viewer-switch" title="Change viewing profile"><span id="viewerLabel">AKHILESH</span><img src="assets/images/profile-avatar.webp" alt="Current profile"></button><button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div>
+    </header>
+
+    <main>
+      <section class="site-hero observe" id="home">
+        <div class="hero-background" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-layout page-width">
+          <div class="hero-copy">
+            <p class="label"><span class="brand-mark brand-mini">A</span> SERIES <span class="label-line"></span> NOW STREAMING</p>
+            <div class="hero-title display">AKH<span>I</span>LESH</div>
+            <div class="hero-series display">THE SERIES</div>
+            <div class="meta-row"><span class="meta-chip meta-new">TOP STORY</span><span>2022—PRESENT</span><span>BE · COMPUTER SCIENCE</span><span>INDIA</span></div>
+            <div class="hero-role">DATA ANALYST <span>•</span> DATA SCIENCE <span>•</span> AI EXPLORER</div>
+            <p class="hero-description">I turn raw data into meaningful decisions, build dashboards that tell stories, and explore what's possible with artificial intelligence. Every dataset has a story. This is mine.</p>
+            <div class="hero-buttons"><button class="button button-light" id="playIntroFromSite" type="button"><svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="m8 5 12 7-12 7z"/></svg> Play Intro</button><a class="button button-outline" href="assets/docs/Akhilesh_Bhagat_Resume.pdf" data-open-resume><span class="button-symbol">⇩</span> View Resume</a><a href="#about" class="circle-button" title="More information" aria-label="More information">i</a></div>
+          </div>
+        </div>
+        <div class="hero-edge-note">A SERIES ORIGINAL <span>—</span> CODEWITHAKHILESH</div>
+      </section>
+
+      <section class="section explore-section" id="explore">
+        <div class="page-width"><div class="section-head compact-head"><h2 class="small-section-title">Continue Exploring</h2><div class="carousel-arrows"><button type="button" data-slide="prev" data-target="explore-track" aria-label="Previous episode">‹</button><button type="button" data-slide="next" data-target="explore-track" aria-label="Next episode">›</button></div></div><div class="horizontal-scroll explore-track" id="explore-track">
+          <a class="episode-card episode-red" style="--episode-photo:url('assets/images/episode-story.webp')" href="#resume"><div class="episode-card-top"><span>EPISODE 01</span><span class="episode-play">▶</span></div><div><span class="poster-mini">THE SCREENPLAY</span><h3 class="display">MY STORY</h3><p>Resume & background</p></div><span class="episode-meter"></span></a>
+          <a class="episode-card episode-gold" style="--episode-photo:url('assets/images/episode-moments.webp')" href="#moments"><div class="episode-card-top"><span>EPISODE 02</span><span class="episode-play">▶</span></div><div><span class="poster-mini">THE HIGHLIGHTS</span><h3 class="display">TOP MOMENTS</h3><p>Milestones that shaped me</p></div><span class="episode-meter"></span></a>
+          <a class="episode-card episode-blue" style="--episode-photo:url('assets/images/episode-skills.webp')" href="#skills"><div class="episode-card-top"><span>EPISODE 03</span><span class="episode-play">▶</span></div><div><span class="poster-mini">THE TOOLBOX</span><h3 class="display">MY SKILLS</h3><p>Tools, data & intelligence</p></div><span class="episode-meter"></span></a>
+          <a class="episode-card episode-purple" style="--episode-photo:url('assets/images/episode-projects.webp')" href="#originals"><div class="episode-card-top"><span>EPISODE 04</span><span class="episode-play">▶</span></div><div><span class="poster-mini">A SERIES ORIGINAL</span><h3 class="display">MY PROJECTS</h3><p>Where ideas come alive</p></div><span class="episode-meter"></span></a>
+          <a class="episode-card episode-green" style="--episode-photo:url('assets/images/episode-journey.webp')" href="#journey"><div class="episode-card-top"><span>EPISODE 05</span><span class="episode-play">▶</span></div><div><span class="poster-mini">FIVE SEASONS</span><h3 class="display">MY JOURNEY</h3><p>The chapters behind the work</p></div><span class="episode-meter"></span></a>
+          <a class="episode-card episode-orange" href="#finale"><div class="episode-card-top"><span>EPISODE 06</span><span class="episode-play">▶</span></div><div><span class="poster-mini">NEXT EPISODE</span><h3 class="display">LET'S CONNECT</h3><p>Make the next one together</p></div><span class="episode-meter"></span></a>
+        </div></div>
+      </section>
+
+      <section class="section story-section observe" id="resume">
+        <div class="page-width"><div class="section-heading"><div class="eyebrow">THE SCREENPLAY</div><h2 class="display">THE FULL <span>STORY</span></h2><p>A snapshot of the data, decisions, and experiences behind the person.</p></div>
+          <div class="story-layout"><article class="story-main panel-dark"><div class="story-top"><div><div class="story-kicker">LEAD CHARACTER</div><h3 class="display">AKHILESH BHAGAT</h3><p>Data Analyst & Data Science Enthusiast</p></div><span class="story-symbol">A.</span></div>
+            <div class="resume-columns"><div><h4>01 / THE OBJECTIVE</h4><p>Detail-oriented analytics professional focused on cleaning, modeling, and communicating data in ways people can act on. Experienced with project-based Excel, MySQL, Power BI and Python workflows.</p><h4>02 / THE EDUCATION</h4><div class="resume-entry"><strong>Bachelor of Engineering — Computer Science</strong><span>Sant Gadge Baba Amravati University</span><span>2022—2026 · Maharashtra</span></div><h4>03 / THE EXPERIENCE</h4><div class="resume-entry"><strong>Data Science Internship</strong><span>Labmentix Edtech Pvt. Ltd. · 2025—2026</span><span>Data cleaning, exploration, statistics, features and predictive-model workflows</span></div></div><div><h4>04 / THE SELECTED WORK</h4><ul class="work-list"><li><b>BMW Showroom Analysis</b><small>Power BI · Data preparation</small></li><li><b>Airline Management System</b><small>MySQL · Relational data</small></li><li><b>Shell Pump Sales Dashboard</b><small>Advanced Excel · Reporting</small></li><li><b>GoYatra Travel Planner</b><small>JavaScript · Node.js · MongoDB</small></li></ul><h4>05 / THE TOOLKIT</h4><div class="inline-tags"><span>EXCEL</span><span>SQL</span><span>POWER BI</span><span>PYTHON</span><span>TABLEAU</span><span>AI / ML</span></div></div></div>
+          </article><aside class="story-side"><div class="side-card side-resume"><span class="card-eyebrow">YOUR NEXT READ</span><span class="side-big display">THE<br>RESUME.</span><p>One page. The facts, the skills, the selected work.</p><a class="button button-light" href="assets/docs/Akhilesh_Bhagat_Resume.pdf" data-open-resume>↗ VIEW RESUME</a></div><div class="side-stats"><div><strong>04<span>+</span></strong><span>PROJECT HIGHLIGHTS</span></div><div><strong>03</strong><span>CORE ANALYTICS TOOLS</span></div><div><strong>01</strong><span>ONGOING STORY</span></div></div></aside></div>
+        </div>
+      </section>
+
+      <section class="section moments-section observe" id="moments"><div class="page-width"><div class="section-heading"><div class="eyebrow">THE HIGHLIGHTS</div><h2 class="display">TOP <span>MOMENTS</span></h2><p>Not fictional awards — real project milestones and learning experiences.</p></div><div class="moments-grid">
+        <article class="moment-card"><div class="laurel modern-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><div class="moment-index">01 / EXPERIENCE</div><h3 class="display">DATA SCIENCE<br>INTERNSHIP</h3><p>Hands-on exposure to the data science workflow at Labmentix.</p></article>
+        <article class="moment-card"><div class="laurel modern-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/><path d="M15 6h4v4"/></svg></div><div class="moment-index">02 / ANALYTICS</div><h3 class="display">10,000<br>RECORDS</h3><p>Fuel station sales and operations analysis in Advanced Excel.</p></article>
+        <article class="moment-card"><div class="laurel modern-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 12v7c0 1.66 3 3 8 3s8-1.34 8-3v-7"/></svg></div><div class="moment-index">03 / DATABASES</div><h3 class="display">AIRLINE<br>DATABASE</h3><p>Relational database with ten documented business tables.</p></article>
+        <article class="moment-card"><div class="laurel modern-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16v-4M12 16V8M17 16v-6"/></svg></div><div class="moment-index">04 / BUSINESS INTELLIGENCE</div><h3 class="display">BMW<br>SHOWROOM</h3><p>Multi-table Power BI cleaning and modeling preparation.</p></article>
+        <article class="moment-card"><div class="laurel modern-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 9 9l-7 3 7 3 3 7 3-7 7-3-7-3-3-7zM18 2v4m-2-2h4"/></svg></div><div class="moment-index">05 / DEVELOPMENT</div><h3 class="display">GOYATRA<br>PLANNER</h3><p>Travel-planning application with trip and budget workflows.</p></article>
+      </div><div class="cert-heading"><h3>Credentials & Learning Archive <span>· Portfolio Assets</span></h3><p>Certificates previously included in my original portfolio archive.</p></div><div class="horizontal-scroll certificates-track">
+       <button type="button" class="certificate-card" data-certificate="aws.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/aws.jpg" aria-label="Preview AWS certificate" style="--card-visual:url('assets/images/visual-ai.webp')"><span class="cert-crest">✦</span><span class="cert-number">ARCHIVE 01</span><strong>AWS</strong><span>VIEW CERTIFICATE ↗</span></button>
+       <button type="button" class="certificate-card" data-certificate="jp morgan.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/jp%20morgan.jpg" aria-label="Preview J.P. MORGAN certificate" style="--card-visual:url('assets/images/visual-data.webp')"><span class="cert-crest">⌘</span><span class="cert-number">ARCHIVE 02</span><strong>J.P. MORGAN</strong><span>VIEW CERTIFICATE ↗</span></button>
+       <button type="button" class="certificate-card" data-certificate="accenture.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/accenture.jpg" aria-label="Preview ACCENTURE certificate" style="--card-visual:url('assets/images/visual-career.webp')"><span class="cert-crest">✳</span><span class="cert-number">ARCHIVE 03</span><strong>ACCENTURE</strong><span>VIEW CERTIFICATE ↗</span></button>
+       <button type="button" class="certificate-card" data-certificate="GE aeorospace.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/GE%20aeorospace.jpg" aria-label="Preview GE AEROSPACE certificate" style="--card-visual:url('assets/images/visual-airline.webp')"><span class="cert-crest">◇</span><span class="cert-number">ARCHIVE 04</span><strong>GE AEROSPACE</strong><span>VIEW CERTIFICATE ↗</span></button>
+       <button type="button" class="certificate-card" data-certificate="python.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/python.jpg" aria-label="Preview PYTHON certificate" style="--card-visual:url('assets/images/visual-data.webp')"><span class="cert-crest">{ }</span><span class="cert-number">ARCHIVE 05</span><strong>PYTHON</strong><span>VIEW CERTIFICATE ↗</span></button>
+       <button type="button" class="certificate-card" data-certificate="algorithm.jpg" data-cert-url="https://raw.githubusercontent.com/codewithakhilesh/PortFolio_Akhil/main/algorithm.jpg" aria-label="Preview MACHINE LEARNING certificate" style="--card-visual:url('assets/images/visual-ai.webp')"><span class="cert-crest">∞</span><span class="cert-number">ARCHIVE 06</span><strong>MACHINE LEARNING</strong><span>VIEW CERTIFICATE ↗</span></button>
+      </div></div></section>
+
+      <section class="section skills-section observe" id="skills"><div class="page-width"><div class="section-heading"><div class="eyebrow">BEHIND THE SCENES</div><h2 class="display">MY SKILL <span>UNIVERSE</span></h2><p>Pick a category to explore the technologies behind my work.</p></div><div class="skills-workspace"><div class="skills-tabs" role="tablist" aria-label="Skill categories" id="skillsTabs"></div><div class="skills-content"><div class="skills-topline"><div><span class="selected-count" id="skillsCount">04 TECHNOLOGIES</span><h3 class="display" id="skillsCategoryTitle">DATA ANALYTICS</h3></div><span class="orbit-icon">✳</span></div><div class="skills-grid" id="skillsGrid"></div></div></div></div></section>
+
+      <section class="section originals-section observe" id="originals"><div class="page-width"><div class="section-heading"><div class="eyebrow">BUILT, NOT JUST IMAGINED</div><h2 class="display">AKHILESH <span>ORIGINALS</span></h2><p>Real data projects, product experiments, and systems I've worked on.</p></div><div class="originals-grid" id="projectsGrid"></div><div class="other-work"><span>THE EXTENDED CUT</span><p>More practice, experiments and repositories on GitHub.</p><a class="outline-cta" href="https://github.com/codewithakhilesh?tab=repositories" target="_blank" rel="noopener">BROWSE ALL REPOSITORIES <span>↗</span></a></div></div></section>
+
+
+      <div class="project-library" id="project-library">
+       <div class="page-width"><div class="section-heading"><div class="eyebrow">THE COMPLETE COLLECTION</div><h2 class="display">PROJECT <span>LIBRARY</span></h2><p>Three active project modules. Every technology has its own section, ready for new work.</p></div>
+        <nav class="module-quicklinks" aria-label="Project categories"><a href="#sql-projects">SQL · 05</a><a href="#excel-projects">EXCEL · 03</a><a href="#powerbi-projects">POWER BI · 03</a><a href="#future-projects">COMING NEXT ↗</a></nav>
+        <section class="project-module" id="sql-projects" aria-labelledby="sql-heading"><div class="project-module-head"><div><span class="module-kicker">COLLECTION 01 / RELATIONAL SYSTEMS</span><h3 class="display" id="sql-heading">SQL <em>PROJECTS</em></h3></div><span class="module-count">05 PROJECTS</span></div><div class="module-grid" id="sqlProjectCards"></div></section>
+        <section class="project-module" id="excel-projects" aria-labelledby="excel-heading"><div class="project-module-head"><div><span class="module-kicker">COLLECTION 02 / SPREADSHEET INTELLIGENCE</span><h3 class="display" id="excel-heading">EXCEL <em>PROJECTS</em></h3></div><span class="module-count">03 PROJECTS</span></div><div class="module-grid" id="excelProjectCards"></div></section>
+        <section class="project-module" id="powerbi-projects" aria-labelledby="powerbi-heading"><div class="project-module-head"><div><span class="module-kicker">COLLECTION 03 / BUSINESS INTELLIGENCE</span><h3 class="display" id="powerbi-heading">POWER BI <em>PROJECTS</em></h3></div><span class="module-count">03 PROJECTS</span></div><div class="module-grid" id="powerbiProjectCards"></div></section>
+        <section class="future-modules" id="future-projects"><span class="module-kicker">NEW SEASONS COMING</span><h3 class="display">MORE TO <em>BUILD.</em></h3><p>These technology collections are reserved for future verified projects.</p><div class="future-modules-list"><span>PYTHON</span><span>TABLEAU</span><span>MACHINE LEARNING</span><span>DATA SCIENCE</span><span>GENERATIVE AI</span><span>AGENTIC AI</span></div></section>
+       </div>
+      </div>
+
+      <section class="section about-section observe" id="about"><div class="page-width"><div class="section-heading"><div class="eyebrow">THE PILOT</div><h2 class="display">ABOUT <span>ME</span></h2></div><div class="about-layout"><div class="about-photo"><img src="assets/images/about-portrait.webp" alt="Akhilesh Bhagat in a black suit" loading="lazy"><div class="portrait-bottom"><span>AKHILESH BHAGAT</span><small>THE PERSON BEHIND THE DATA</small></div></div><div class="about-info"><div class="about-quote-mark">“</div><blockquote>I believe every dataset has a <em>story worth telling</em> — if you ask the right questions.</blockquote><p>I'm a Computer Science graduate and data enthusiast who enjoys turning complex, unorganized information into clear insights. From building interactive Power BI dashboards to designing SQL databases and exploring Python-based analytics, I like work that blends logic, creativity, and practical impact.</p><p>My current interests span Business Intelligence, Data Science, Machine Learning and applied AI. I bring a learner's curiosity to every new project.</p><div class="about-facts"><div><small>BASED IN</small><strong>Pune, Maharashtra</strong></div><div><small>BACKGROUND</small><strong>BE Computer Science</strong></div><div><small>PASSION</small><strong>Data · Technology · AI</strong></div><div><small>OPEN TO</small><strong>Analytics Opportunities</strong></div></div><a href="mailto:bhagatakhilesh76@gmail.com" class="about-contact">LET'S START A CONVERSATION <span>↗</span></a></div></div></div></section>
+
+      <section class="section journey-section observe" id="journey"><div class="page-width"><div class="section-heading"><div class="eyebrow">THE CHAPTERS SO FAR</div><h2 class="display">MY <span>JOURNEY</span></h2><p>Five seasons of studying, experimenting, learning and building.</p></div><div class="journey-tabs" id="journeyTabs" role="tablist" aria-label="Journey seasons"></div><div class="journey-feature" id="journeyFeature"></div></div></section>
+
+      <section class="section picks-section observe" id="top-picks"><div class="page-width"><div class="section-heading"><div class="eyebrow">START HERE</div><h2 class="display">AKHILESH'S <span>TOP PICKS</span></h2><p>Five things that best tell you what I like to create.</p></div><div class="horizontal-scroll picks-track" id="picksTrack"></div></div></section>
+
+      <section class="finale-section observe" id="finale"><div class="finale-grid" aria-hidden="true"></div><div class="finale-inner page-width"><div class="eyebrow eyebrow-center">THE NEXT EPISODE</div><h2 class="display">TO BE<br><span>CONTINUED</span><i>...</i></h2><p class="finale-byline">AKHILESH BHAGAT</p><p class="finale-role">DATA ANALYST <span>✦</span> DATA SCIENCE <span>✦</span> AI EXPLORER</p><p class="finale-body">The best stories haven't been written yet.<br>Maybe our next project is one of them.</p><div class="finale-actions"><a class="button button-red" href="mailto:bhagatakhilesh76@gmail.com?subject=Let's%20Build%20Something">✦ LET'S BUILD</a><a class="button button-outline" href="https://www.linkedin.com/in/akhilesh-bhagat/" target="_blank" rel="noopener">LINKEDIN ↗</a><a class="button button-outline" href="https://github.com/codewithakhilesh" target="_blank" rel="noopener">GITHUB ↗</a><a class="button button-outline" href="mailto:bhagatakhilesh76@gmail.com">EMAIL ↗</a><a class="button button-outline" href="https://www.instagram.com/iam_.akhillx/" target="_blank" rel="noopener">INSTAGRAM ↗</a></div><div class="finale-subnav"><button type="button" id="watchAgain">↺ WATCH AGAIN</button><button type="button" id="replayOpening">▷ REPLAY OPENING</button></div></div><footer class="site-footer page-width"><span><span class="brand-mark">A</span> SERIES</span><span>© 2026 AKHILESH BHAGAT. ALL RIGHTS RESERVED.</span><span>MADE WITH DATA, CURIOSITY & A LITTLE CINEMA.</span></footer></section>
+    </main>
+  </div>
+
+  <div class="modal-layer" id="introModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden><div class="modal-backdrop" data-dismiss-modal></div><div class="trailer-modal"><button class="modal-close" aria-label="Close introduction" data-dismiss-modal type="button">✕</button><div class="trailer-art"><div class="trailer-shine"></div><img src="assets/images/hero-intro-clear.webp" alt="Akhilesh Bhagat" loading="lazy"><div class="trailer-text"><span class="trailer-minor" id="trailerKicker">A SERIES ORIGINAL</span><h2 class="display" id="modalTitle">EVERY STORY<br>STARTS WITH<br><span>A QUESTION.</span></h2><p id="trailerCaption">Mine started with a curiosity for data.</p></div></div><div class="trailer-progress"><span></span></div><div class="trailer-foot"><span>AKHILESH — THE SERIES</span><button type="button" id="skipTrailer">SKIP INTRO →</button></div></div></div>
+  <div class="modal-layer" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" hidden><div class="modal-backdrop" data-dismiss-project></div><div class="project-dialog"><button class="modal-close" type="button" aria-label="Close project details" data-dismiss-project>✕</button><div class="dialog-poster" id="dialogPoster"></div><div class="dialog-content"><span class="eyebrow" id="projectModalCategory">AKHILESH ORIGINAL</span><h2 class="display" id="projectModalTitle"></h2><p id="projectModalDescription"></p><h3>TOOLS & TECHNOLOGIES</h3><div class="inline-tags" id="projectModalTags"></div><div class="dialog-actions" id="projectModalActions"></div></div></div></div>
+
+  <div class="modal-layer" id="mediaModal" role="dialog" aria-modal="true" aria-labelledby="mediaTitle" hidden>
+    <div class="modal-backdrop" data-close-media></div>
+    <div class="media-dialog" tabindex="-1">
+      <div class="media-topbar"><div><small id="mediaEyebrow">DOCUMENT VIEWER</small><h2 id="mediaTitle">PREVIEW</h2></div><button type="button" class="media-control media-close" data-close-media aria-label="Close document viewer">✕</button></div>
+      <div class="media-toolbar"><button class="media-control" id="mediaPrev" type="button" aria-label="Previous certificate">‹</button><button class="media-control" id="mediaNext" type="button" aria-label="Next certificate">›</button><span id="mediaCounter"> </span><div class="media-tools-right"><button class="media-control" id="zoomOut" type="button" aria-label="Zoom out">−</button><span id="mediaZoom">100%</span><button class="media-control" id="zoomIn" type="button" aria-label="Zoom in">+</button><button class="media-control" id="zoomReset" type="button">RESET</button><a class="media-control media-download" id="mediaDownload" href="assets/docs/Akhilesh_Bhagat_Resume.pdf" download>⇩ DOWNLOAD</a></div></div>
+      <div class="media-stage" id="mediaStage"><div class="media-zoom-wrap" id="mediaZoomWrap"><iframe id="mediaPdf" title="Akhilesh resume PDF" loading="lazy" hidden></iframe><img id="mediaImg" alt="Certificate preview" hidden></div><p id="mediaError" class="media-error" hidden>Could not load the certificate image here. The archived original may require internet access. <a id="mediaFallback" href="#" target="_blank" rel="noopener">Open original image ↗</a></p></div>
+      <div class="media-footer"><span>PREVIEW INSIDE THE PORTFOLIO</span><span>On mobile, use download if your browser cannot embed PDF.</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
